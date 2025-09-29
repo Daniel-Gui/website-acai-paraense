@@ -9,4 +9,5 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+<h1>Pai do jonas</h1>
 {@render children?.()}
