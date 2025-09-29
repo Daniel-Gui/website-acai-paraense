@@ -1,5 +1,5 @@
 media:
 - name: imagens
-  label: Images
+  label: "Images"
   input: static/images
   output: images
