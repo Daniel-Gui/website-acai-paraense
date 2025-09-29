@@ -22,5 +22,4 @@ content:
     label: "Titulo da Pagina"
     description: "Titulo do jonas Ruim de Porco"
     type: string
-    required: true
-    
+   
