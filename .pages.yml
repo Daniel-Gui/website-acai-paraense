@@ -1,3 +1,6 @@
 media:
+- name: imagens
+  label: "Images"
   input: static/images
   output: images
+  extensions: [ webp ]
