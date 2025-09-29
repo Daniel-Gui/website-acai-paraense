@@ -3,4 +3,4 @@ media:
   label: "Images"
   input: static/images
   output: images
-  extensions: [ png, webp ]
+  extensions: [ webp ]
