@@ -1,4 +1,9 @@
 media:
+- name: gerenal
+  label: "Arquivos Gerais"
+  input: static
+  output: / 
+
 - name: blog-images
   label: "Imagens do Blog"
   input: static/images/blog
