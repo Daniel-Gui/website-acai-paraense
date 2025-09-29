@@ -9,3 +9,18 @@ media:
   input: static/images/blog
   output: images/blog
   extensions: [ png, webp ]
+
+content:
+- name: home
+  label: "Pagina inicial"
+  type: file
+  path: "src/content/home-page.json"
+  filename: "home-page.json"
+  format: "json"
+  fields: 
+  - name: title
+    label: "Titulo da Pagina"
+    description: "Titulo do jonas Ruim de Porco"
+    type: string
+    required: true
+    
