@@ -1,6 +1,6 @@
 media:
-- name: imagens
-  label: "Images"
-  input: static/images
-  output: images
-  extensions: [ webp ]
+- name: blog-images
+  label: "Imagens do Blog"
+  input: static/images/blog
+  output: images/blog
+  extensions: [ png, webp ]
