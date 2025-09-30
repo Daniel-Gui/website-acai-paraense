@@ -1,6 +1,6 @@
 <script lang="ts">
-	import FullScreenMenu from './full-screen-menu.svelte';
 	import { mobileMenuState } from './mobile-menu-state.svelte';
+	import FullScreenMenu from './full-screen-menu.svelte';
 
 	interface Navigation {
 		name: string;
@@ -44,7 +44,6 @@
 			<button onclick={mobileMenuState.toggleMenu}> MobileMenu </button>
 		</div>
 	</div>
-	{#if mobileMenuState.isMenuOpen}
-		<FullScreenMenu {navigation} />
-	{/if}
+
+	<FullScreenMenu {navigation} />
 </nav>
