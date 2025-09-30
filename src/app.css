@@ -1,3 +1,31 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@layer base {
+	html {
+		scroll-behavior: smooth;
+	}
+	body {
+		@apply bg-gray-100;
+	}
+}
+
+@utility container {
+	padding-inline: 1.5rem;
+	margin-inline: auto;
+	@variant sm {
+		padding-inline: 3rem;
+	}
+
+	@variant md {
+		padding-inline: 2rem;
+	}
+
+	@variant lg {
+		padding-inline: 3rem;
+	}
+	@variant xl {
+		padding-inline: 0;
+	}
+}
