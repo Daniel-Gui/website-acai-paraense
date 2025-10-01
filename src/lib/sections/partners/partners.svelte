@@ -38,12 +38,10 @@
 </script>
 
 <div class="container space-y-10">
-	<Slider items={partnersImages} quantity={partnersImages.length} width={300} height={60} />
-
 	<Slider
 		items={partnersImages}
 		quantity={partnersImages.length}
-		reverse={true}
+		reverse={false}
 		width={200}
 		height={50}
 	/>

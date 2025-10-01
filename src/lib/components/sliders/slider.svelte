@@ -16,7 +16,7 @@
 </script>
 
 <div
-	{reverse}
+	data-reverse={reverse}
 	class="slider"
 	style="--width: {width}px; --height: {height}px; --quantity: {quantity};"
 >
@@ -81,7 +81,7 @@
 	.slider:hover .item:hover {
 		filter: grayscale(0);
 	}
-	.slider[reverse='true'] .item {
+	.slider[data-reverse='true'] .item {
 		animation: reversePlay 10s linear infinite;
 	}
 	@keyframes reversePlay {
