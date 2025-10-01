@@ -1,5 +1,18 @@
-<script>
-	let { reverse = false, quantity = 10, items = null, width = 200, height = 50 } = $props();
+<script lang="ts">
+	interface Props {
+		reverse?: boolean;
+		quantity?: number;
+		items?:
+			| {
+					alt: string;
+					imagePath: string;
+			  }[]
+			| null;
+		width?: number;
+		height?: number;
+	}
+
+	let { reverse = false, quantity = 10, items = null, width = 200, height = 50 }: Props = $props();
 </script>
 
 <div
@@ -11,7 +24,7 @@
 		{#if items !== null}
 			{#each items as item, index}
 				<div class="item" style="--position: {index + 1};">
-					<img src={item.image} alt={item.name} />
+					<img src={item.imagePath} alt={item.alt} />
 				</div>
 			{/each}
 		{:else}

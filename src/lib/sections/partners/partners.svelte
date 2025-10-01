@@ -3,36 +3,36 @@
 
 	const partnersImages = [
 		{
-			name: 'Logoipsum',
-			image: '/images/partners/logoipsum-391.png'
+			alt: 'Logoipsum',
+			imagePath: '/images/partners/logoipsum-391.png'
 		},
 		{
-			name: 'Logoipsum',
-			image: '/images/partners/logoipsum-406.png'
+			alt: 'Logoipsum',
+			imagePath: '/images/partners/logoipsum-406.png'
 		},
 		{
-			name: 'Logoipsum',
-			image: '/images/partners/logoipsum-391.png'
+			alt: 'Logoipsum',
+			imagePath: '/images/partners/logoipsum-391.png'
 		},
 		{
-			name: 'Logoipsum',
-			image: '/images/partners/logoipsum-406.png'
+			alt: 'Logoipsum',
+			imagePath: '/images/partners/logoipsum-406.png'
 		},
 		{
-			name: 'Logoipsum',
-			image: '/images/partners/logoipsum-391.png'
+			alt: 'Logoipsum',
+			imagePath: '/images/partners/logoipsum-391.png'
 		},
 		{
-			name: 'Logoipsum',
-			image: '/images/partners/logoipsum-391.png'
+			alt: 'Logoipsum',
+			imagePath: '/images/partners/logoipsum-391.png'
 		},
 		{
-			name: 'Logoipsum',
-			image: '/images/partners/logoipsum-406.png'
+			alt: 'Logoipsum',
+			imagePath: '/images/partners/logoipsum-406.png'
 		},
 		{
-			name: 'Logoipsum',
-			image: '/images/partners/logoipsum-391.png'
+			alt: 'Logoipsum',
+			imagePath: '/images/partners/logoipsum-391.png'
 		}
 	];
 </script>
