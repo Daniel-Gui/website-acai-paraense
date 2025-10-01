@@ -1,5 +1,5 @@
 <script>
-	import Slider from '$lib/components/sliders/slider.svelte';
+	import Partners from '$lib/sections/partners/partners.svelte';
 </script>
 
-<Slider />
+<Partners />

@@ -1,21 +1,33 @@
 <script>
-	const quantity = 10;
+	let { reverse = false, quantity = 10, items = null, width = 200, height = 50 } = $props();
 </script>
 
-<div reverse="false" class="slider" style="--width: 100px; --height: 50px; --quantity: {quantity};">
+<div
+	{reverse}
+	class="slider"
+	style="--width: {width}px; --height: {height}px; --quantity: {quantity};"
+>
 	<div class="list">
-		{#each Array(quantity) as item, index}
-			<div class="item" style="--position: {index + 1};">
-				<img src="/images/partners/logoipsum-406.png" alt="" />
-			</div>
-		{/each}
+		{#if items !== null}
+			{#each items as item, index}
+				<div class="item" style="--position: {index + 1};">
+					<img src={item.image} alt={item.name} />
+				</div>
+			{/each}
+		{:else}
+			{#each Array(quantity) as item, index}
+				<div class="item" style="--position: {index + 1};">
+					<img src="/images/partners/logoipsum-406.png" alt="" />
+				</div>
+			{/each}
+		{/if}
 	</div>
 </div>
 
 <style>
 	.slider {
 		width: 100%;
-		border: 1px solid red;
+		/* border: 1px solid red; */
 		height: var(--height);
 		overflow: hidden;
 		mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
@@ -27,6 +39,8 @@
 		position: relative;
 	}
 	.slider .list .item {
+		display: flex;
+		align-items: center;
 		width: var(--width);
 		height: var(--height);
 		position: absolute;

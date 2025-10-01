@@ -14,7 +14,7 @@
 	<div
 		in:fly={{ y: 100 }}
 		out:fade={{ duration: 300 }}
-		class="absolute top-0 right-0 flex h-screen w-screen flex-col items-center justify-center gap-5 bg-gray-400 transition-all duration-300 ease-in-out lg:hidden"
+		class="absolute top-0 right-0 z-50 flex h-screen w-screen flex-col items-center justify-center gap-5 bg-gray-400 transition-all duration-300 ease-in-out lg:hidden"
 	>
 		<ul class="flex flex-col items-center justify-center gap-5">
 			{#each navigation as { name, link }}
